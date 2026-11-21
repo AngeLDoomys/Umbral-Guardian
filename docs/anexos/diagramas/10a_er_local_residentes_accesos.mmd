@@ -1,0 +1,95 @@
+erDiagram
+  unidad {
+    INTEGER idunidad PK
+    TEXT codigo
+  }
+  tipo_residente {
+    INTEGER idtipo_residente PK
+    TEXT nombre
+  }
+  residente {
+    INTEGER idresidente PK
+    INTEGER idunidad FK
+    INTEGER idtipo_residente FK
+    TEXT rut
+    TEXT nombres
+    TEXT apellidos
+    DATE fecha_nacimiento
+    TEXT telefono
+    TEXT email
+    DATETIME fecha_alta
+    INTEGER tratamiento_bloqueado
+  }
+  consentimiento {
+    INTEGER idconsentimiento PK
+    INTEGER idresidente FK
+    INTEGER idrepresentante FK
+    INTEGER idcuenta_registro FK
+    TEXT version_formulario
+    TEXT medio
+    DATETIME fecha_otorgamiento
+    DATETIME fecha_revocacion
+  }
+  plantilla_facial {
+    INTEGER idplantilla PK
+    INTEGER idresidente FK
+    BLOB embedding
+    TEXT modelo
+    DATETIME fecha_captura
+  }
+  vehiculo {
+    INTEGER idvehiculo PK
+    INTEGER idunidad FK
+    TEXT patente
+    TEXT tipo
+    TEXT marca
+    TEXT modelo
+    TEXT color
+    DATETIME fecha_registro
+  }
+  zona {
+    INTEGER idzona PK
+    TEXT nombre
+  }
+  camara {
+    INTEGER idcamara PK
+    INTEGER idzona FK
+    TEXT nombre
+    TEXT tipo_fuente
+    TEXT fuente
+    TEXT fuente_alta
+    INTEGER ancho
+    INTEGER alto
+    INTEGER fps
+    INTEGER activa
+  }
+  deteccion_rostro {
+    INTEGER iddeteccion PK
+    INTEGER idcamara FK
+    INTEGER idresidente FK
+    INTEGER idautorizacion FK
+    DATETIME fecha_hora
+    TEXT resultado
+    REAL confianza
+  }
+  deteccion_vehiculo {
+    INTEGER iddeteccion PK
+    INTEGER idcamara FK
+    INTEGER idvehiculo FK
+    INTEGER idvisita FK
+    DATETIME fecha_hora
+    TEXT patente_leida
+    TEXT resultado
+    REAL confianza
+  }
+  tipo_residente ||--o{ residente : "idtipo_residente"
+  unidad ||--o{ residente : "idunidad"
+  residente ||--o{ consentimiento : "idrepresentante"
+  residente ||--o{ consentimiento : "idresidente"
+  residente ||--o{ plantilla_facial : "idresidente"
+  unidad ||--o{ vehiculo : "idunidad"
+  zona ||--o{ camara : "idzona"
+  residente ||--o{ deteccion_rostro : "idresidente"
+  camara ||--o{ deteccion_rostro : "idcamara"
+  vehiculo ||--o{ deteccion_vehiculo : "idvehiculo"
+  camara ||--o{ deteccion_vehiculo : "idcamara"

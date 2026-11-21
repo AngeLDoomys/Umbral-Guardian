@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1104" viewBox="0 0 1180 1104"><defs><marker id="m_abierta_3d4450" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1,1 L10,6 L1,11" fill="none" stroke="#3d4450" stroke-width="1.5"/></marker></defs><rect width="1180" height="1104" fill="#ffffff"/><rect x="230" y="40" width="910" height="994" fill="#fff" stroke="#8f96a2" stroke-width="1.4"/><line x1="230" y1="72" x2="1140" y2="72" stroke="#8f96a2" stroke-width="1.2"/>
+<path d="M108,536.0 L441.2363809069524,163.64783623263781" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L436.14834362531093,252.66649788559494" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L428.1269419737564,340.8887712575299" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L414.55997371774646,427.00858722224586" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L395.34311005343034,506.8116479629698" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L396.5864662384376,601.1436718371191" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L425.7134357982589,711.710590904229" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L421.6739594778626,812.1463751610979" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M108,536.0 L442.6130480004279,940.103793860562" fill="none" stroke="#3d4047" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M637.731605514335,241.7731605514335 L856.1580042339383,263.6158004233938" fill="none" stroke="#3d4450" stroke-width="1.3" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#m_abierta_3d4450)"/>
+<path d="M637.731605514335,308.2268394485665 L856.1580042339383,286.3841995766062" fill="none" stroke="#3d4450" stroke-width="1.3" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#m_abierta_3d4450)"/>
+<path d="M850.0,616.0 L648.0,616.0" fill="none" stroke="#3d4450" stroke-width="1.3" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#m_abierta_3d4450)"/>
+<path d="M850.0,848.0 L648.0,848.0" fill="none" stroke="#3d4450" stroke-width="1.3" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#m_abierta_3d4450)"/>
+<circle cx="90" cy="508.0" r="14" fill="#fff" stroke="#2d3340" stroke-width="2"/><path d="M90,522.0 L90,558.0 M66,536.0 L114,536.0 M90,558.0 L70,590.0 M90,558.0 L110,590.0" stroke="#2d3340" stroke-width="2" fill="none"/>
+<ellipse cx="520" cy="140" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="230" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="320" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="410" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="500" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="616" rx="128" ry="56" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<line x1="427.84000000000003" y1="606" x2="612.16" y2="606" stroke="#2f5b94" stroke-width="1" stroke-dasharray="4 3"/>
+<ellipse cx="520" cy="732" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="520" cy="848" rx="128" ry="56" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<line x1="427.84000000000003" y1="838" x2="612.16" y2="838" stroke="#2f5b94" stroke-width="1" stroke-dasharray="4 3"/>
+<ellipse cx="520" cy="964" rx="128" ry="30" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="970" cy="275.0" rx="120" ry="36" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="970" cy="616" rx="120" ry="36" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<ellipse cx="970" cy="848" rx="120" ry="36" fill="#e8f0fb" stroke="#2f5b94" stroke-width="1.5"/>
+<rect x="838" y="664" width="264" height="58" fill="#fffbea" stroke="none"/><path d="M846,664 L838,664 L838,722 L846,722" fill="none" stroke="#8f96a2" stroke-width="1.2"/>
+<rect x="838" y="896" width="264" height="58" fill="#fffbea" stroke="none"/><path d="M846,896 L838,896 L838,954 L846,954" fill="none" stroke="#8f96a2" stroke-width="1.2"/>
+<text x="685.0" y="61" font-size="13.5" font-weight="bold" fill="#1f3a68" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="685.0" dy="0">Umbral Guardian</tspan></text>
+<text x="90" y="614.0" font-size="13" font-weight="bold" fill="#2d3340" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="90" dy="0">Conserje</tspan></text>
+<text x="520" y="144" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Iniciar sesión</tspan></text>
+<text x="520" y="234" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Monitorear el acceso de personas</tspan></text>
+<text x="520" y="324" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Monitorear el acceso de vehículos</tspan></text>
+<text x="520" y="414" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Registrar una visita</tspan></text>
+<text x="520" y="504" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Marcar la salida de una visita</tspan></text>
+<text x="520" y="594" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Buscar un residente por fotografía</tspan></text>
+<text x="520" y="622" font-size="10" font-weight="normal" fill="#5b6270" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif" font-style="italic"><tspan x="520" dy="0">puntos de extensión</tspan></text>
+<text x="520" y="638" font-size="10.5" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">consulta del historial</tspan></text>
+<text x="520" y="736" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Generar una invitación QR</tspan></text>
+<text x="520" y="826" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Revisar una solicitud de registro</tspan></text>
+<text x="520" y="854" font-size="10" font-weight="normal" fill="#5b6270" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif" font-style="italic"><tspan x="520" dy="0">puntos de extensión</tspan></text>
+<text x="520" y="870" font-size="10.5" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">aprobación de la solicitud</tspan></text>
+<text x="520" y="968" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="520" dy="0">Consultar las visitas autorizadas</tspan></text>
+<text x="970" y="279.0" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="970" dy="0">Registrar la detección</tspan></text>
+<text x="970" y="620" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="970" dy="0">Consultar el historial</tspan></text>
+<text x="970" y="844" font-size="12" font-weight="normal" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="970" dy="0">Crear el residente o la</tspan><tspan x="970" dy="16.200000000000003">visita autorizada</tspan></text>
+<text x="746.9448048741367" y="243.69448048741367" font-size="11" font-weight="bold" fill="#3d4450" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="746.9448048741367" dy="0">«include»</tspan></text>
+<text x="746.9448048741367" y="288.30551951258633" font-size="11" font-weight="bold" fill="#3d4450" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="746.9448048741367" dy="0">«include»</tspan></text>
+<text x="749.0" y="607.0" font-size="11" font-weight="bold" fill="#3d4450" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="749.0" dy="0">«extend»</tspan></text>
+<text x="749.0" y="839.0" font-size="11" font-weight="bold" fill="#3d4450" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="749.0" dy="0">«extend»</tspan></text>
+<text x="970" y="681" font-size="10.5" font-weight="normal" fill="#4a4f5a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="970" dy="0">Condición: el conserje pide ver el historial</tspan><tspan x="970" dy="13.65">del residente encontrado. Punto de extensión:</tspan><tspan x="970" dy="13.65">consulta del historial.</tspan></text>
+<text x="970" y="913" font-size="10.5" font-weight="normal" fill="#4a4f5a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="970" dy="0">Condición: los datos, el consentimiento</tspan><tspan x="970" dy="13.65">y las fotos son válidos. Punto de extensión:</tspan><tspan x="970" dy="13.65">aprobación de la solicitud.</tspan></text>
+<text x="230" y="1066" font-size="11.5" font-weight="normal" fill="#59606c" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif" font-style="italic"><tspan x="230" dy="0">Nota. La sincronización con la nube es responsabilidad interna de «Iniciar sesión» y se detalla en su descripción textual, no en el diagrama.</tspan></text></svg>

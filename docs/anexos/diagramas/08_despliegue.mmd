@@ -1,0 +1,29 @@
+flowchart LR
+  subgraph COND[Condominio — red local]
+    direction TB
+    DVR[Grabador / cámaras IP<br/>RTSP: canal bajo y alto]
+    subgraph PC[PC de la portería · Windows 11]
+      direction TB
+      APP[Umbral Guardian<br/>Python 3.12 + Tkinter]
+      GPU[GPU NVIDIA GTX 1650 Ti<br/>ONNX Runtime + DirectML]
+      SQL[(SQLite<br/>umbral_local.db)]
+      APP --- GPU
+      APP --- SQL
+    end
+    DVR -- RTSP 554 --> APP
+  end
+  subgraph AWS[AWS Academy · us-east-1]
+    direction TB
+    subgraph EC2[EC2 umbral-api · Ubuntu 24.04 · t3.small]
+      CAD[Caddy<br/>HTTPS Let's Encrypt]
+      GUN[gunicorn + API Flask<br/>127.0.0.1:5000]
+      CAD --> GUN
+    end
+    RDS[(RDS MySQL 8.4<br/>umbral_central · privada)]
+    GUN -- 3306 --> RDS
+  end
+  DNS[DuckDNS<br/>umbralguardian-mt.duckdns.org]
+  CEL[Celular del residente<br/>o visita]
+  APP -- HTTPS 443 --> CAD
+  CEL -- HTTPS 443 --> CAD
+  EC2 -. actualiza su IP .-> DNS

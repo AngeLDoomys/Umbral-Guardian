@@ -1,0 +1,26 @@
+sequenceDiagram
+  autonumber
+  actor Adm as Administrador o conserje
+  participant N as Nodo de la portería
+  participant API as API en la nube (HTTPS)
+  actor Cel as Celular del residente o visita
+  Adm->>N: Generar QR (tipo, unidad, vigencia)
+  N->>API: crear invitación de un solo uso
+  API-->>N: enlace con token
+  N-->>Adm: ventana con el QR y el enlace
+  Adm-->>Cel: escanea el QR o recibe el enlace
+  Cel->>API: abre el formulario
+  Cel->>API: datos (se validan RUT y patente)
+  Cel->>API: acepta el consentimiento
+  loop 5 fotos con distinta pose
+    Cel->>API: foto
+    API->>API: detecta el rostro y calcula el vector
+    API-->>Cel: vector firmado (la foto se descarta)
+  end
+  Cel->>API: enviar
+  API->>API: cifra todo con la clave pública del nodo
+  N->>API: revisa cada 60 segundos
+  API-->>N: paquete cifrado
+  N->>N: descifra y deja la solicitud pendiente
+  Adm->>N: Aprobar
+  N->>N: crea residente o visita con su rostro

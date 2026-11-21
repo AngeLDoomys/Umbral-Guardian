@@ -1,0 +1,96 @@
+erDiagram
+  plan {
+    INT idplan PK
+    VARCHAR nombre
+    INT precio_mensual
+    TINYINT max_camaras
+    BOOLEAN activo
+  }
+  condominio {
+    INT idcondominio PK
+    VARCHAR rut
+    VARCHAR nombre
+    VARCHAR direccion
+    VARCHAR comuna
+    VARCHAR email_contacto
+    VARCHAR telefono
+    DATETIME fecha_registro
+  }
+  suscripcion {
+    INT idsuscripcion PK
+    INT idcondominio FK
+    INT idplan FK
+    DATE fecha_inicio
+    DATE fecha_fin
+    ENUM estado
+  }
+  pago {
+    INT idpago PK
+    INT idsuscripcion FK
+    DATE fecha_pago
+    INT monto
+    TINYINT meses
+    ENUM medio
+    VARCHAR referencia
+    DATE fecha_fin_anterior
+    BOOLEAN anulado
+    DATETIME fecha_anulacion
+    VARCHAR motivo_anulacion
+  }
+  rol {
+    TINYINT idrol PK
+    VARCHAR nombre
+  }
+  cuenta {
+    INT idcuenta PK
+    INT idcondominio FK
+    TINYINT idrol FK
+    VARCHAR rut
+    VARCHAR nombres
+    VARCHAR apellidos
+    VARCHAR email
+    VARCHAR password_hash
+    BOOLEAN debe_cambiar_password
+    BOOLEAN activa
+    DATETIME fecha_creacion
+    DATETIME ultimo_acceso
+  }
+  nodo {
+    INT idnodo PK
+    INT idcondominio FK
+    VARCHAR nombre
+    CHAR clave_hash
+    DATETIME fecha_alta
+    DATETIME ultimo_contacto
+    BOOLEAN activo
+    TEXT clave_registro
+  }
+  invitacion_registro {
+    INT idinvitacion PK
+    INT idnodo FK
+    CHAR token_hash
+    ENUM tipo
+    INT id_local
+    VARCHAR unidad
+    BOOLEAN solo_rostro
+    BOOLEAN frecuente
+    BOOLEAN rostro
+    VARCHAR consentimiento_version
+    DATETIME creada
+    DATETIME vence
+    DATETIME usada
+  }
+  envio_registro {
+    INT idenvio PK
+    INT idinvitacion FK
+    MEDIUMTEXT paquete
+    DATETIME creado
+  }
+  condominio ||--o{ suscripcion : "idcondominio"
+  plan ||--o{ suscripcion : "idplan"
+  suscripcion ||--o{ pago : "idsuscripcion"
+  condominio ||--o{ cuenta : "idcondominio"
+  rol ||--o{ cuenta : "idrol"
+  condominio ||--o{ nodo : "idcondominio"
+  nodo ||--o{ invitacion_registro : "idnodo"
+  invitacion_registro ||--o{ envio_registro : "idinvitacion"

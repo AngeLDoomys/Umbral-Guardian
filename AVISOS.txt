@@ -1,0 +1,223 @@
+UMBRAL GUARDIAN — NODO DE PORTERÍA
+Avisos de licencia de software de terceros
+==============================================================================
+
+Umbral Guardian incluye software y modelos de terceros. Cada uno se distribuye
+bajo su propia licencia, que se respeta y se reproduce íntegra en la carpeta
+licencias/ instalada junto a este archivo (índice en licencias/INDICE.txt).
+Esa carpeta se genera con tools/generar_licencias.py a partir de los paquetes
+realmente instalados; este archivo resume su contenido.
+
+Revisado el 08-11-2026, sobre las versiones indicadas.
+
+ESTE ARCHIVO Y LA CARPETA licencias/ DEBEN ACOMPAÑAR SIEMPRE AL PROGRAMA.
+Las licencias Apache 2.0, MIT, BSD, MPL 2.0 y LGPL exigen conservar los avisos
+de copyright y el texto de la licencia en todo lo que se distribuye.
+
+
+==============================================================================
+1. MODELOS (carpeta modelos/)
+==============================================================================
+
+rfdetr_nano.onnx — personas y vehículos
+  RF-DETR Nano, pesos preentrenados en COCO, exportados a ONNX sin modificar.
+  Licencia: Apache License 2.0
+  © Roboflow, Inc. — https://github.com/roboflow/rf-detr
+  (Solo las tallas Nano, Small, Medium y Large son Apache 2.0; XL y 2XL usan
+  otra licencia y no se incluyen.)
+  Texto: licencias/modelo_rfdetr_LICENSE.txt
+
+face_detection_yunet_2023mar.onnx — detección de rostros
+  YuNet, del OpenCV Zoo.
+  Licencia: MIT
+  Copyright (c) 2020 Shiqi Yu <shiqi.yu@gmail.com>
+  https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet
+  Texto: licencias/modelo_yunet_face_detection_LICENSE.txt
+
+face_recognition_sface_2021dec.onnx — reconocimiento facial
+  SFace, del OpenCV Zoo.
+  Licencia: Apache License 2.0
+  https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface
+  Texto: licencias/modelo_sface_face_recognition_LICENSE.txt
+
+cct-s-v2-global-model — lectura de patentes (OCR)
+  Modelo de fast-plate-ocr. Su autor declara que el código y los pesos de los
+  modelos de fast-plate-ocr son MIT.
+  Copyright (c) 2024 ankandrew — https://github.com/ankandrew/fast-plate-ocr
+
+license_plate_detector.onnx — detección de patentes
+  YOLOv8n. Licencia AGPL-3.0 según los metadatos del propio modelo.
+  VER SECCIÓN 5 (DEUDA PENDIENTE).
+  Texto: licencias/modelo_license_plate_detector_AGPL-3.0.txt
+
+
+==============================================================================
+2. BIBLIOTECAS
+==============================================================================
+
+Licencias permisivas
+------------------------------------------------------------------------------
+Componente               Versión    Licencia                   Copyright
+opencv-python (OpenCV)   4.13.0.92  Apache 2.0                 OpenCV team y contribuidores
+numpy                    2.5.0      BSD-3-Clause (+0BSD, MIT,  © 2005-2025, NumPy Developers
+                                     Zlib, CC0 en partes)
+pillow                   12.2.0     MIT-CMU (HPND)             © 1997-2011 Secret Labs AB;
+                                                                © 1995-2011 Fredrik Lundh y contribuidores;
+                                                                © 2010 Jeffrey 'Alex' Clark y contribuidores
+  (incluye brotli, FreeType, HarfBuzz, lcms2, libavif, libjpeg-turbo, libpng,
+  libwebp, OpenJPEG, libtiff, liblzma y zlib-ng, con licencias permisivas
+  cuyos textos están en licencias/pillow-12.2.0/; FreeType se usa bajo la
+  FreeType License (FTL), no bajo GPL)
+onnxruntime-directml     1.24.4     MIT                        © Microsoft Corporation
+  (incluye ThirdPartyNotices.txt con los avisos de sus componentes internos)
+flatbuffers              25.9.23    Apache 2.0                 © Google Inc.
+protobuf                 6.33.0     BSD-3-Clause               © 2008 Google Inc.
+packaging                26.2       Apache 2.0 o BSD-2-Clause  © Donald Stufft y contribuidores
+sympy                    1.14.0     BSD-3-Clause               © 2006-2023 SymPy Development Team
+mpmath                   1.3.0      BSD-3-Clause               © 2005-2021 Fredrik Johansson y contribuidores
+fast-plate-ocr           1.1.0      MIT                        © 2024 ankandrew
+PyYAML                   6.0.3      MIT                        © 2017-2021 Ingy döt Net; © 2006-2016 Kirill Simonov
+rich                     14.2.0     MIT                        © 2020 Will McGugan
+markdown-it-py           4.0.0      MIT                        © 2020 ExecutableBookProject
+mdurl                    0.1.2      MIT                        © 2015 Vitaly Puzrin, Alex Kocharin
+Pygments                 2.19.2     BSD-2-Clause               © 2006-2022 los autores (ver AUTHORS)
+colorama                 0.4.6      BSD-3-Clause               © 2010 Jonathan Hartley
+requests                 2.34.2     Apache 2.0                 © 2019 Kenneth Reitz
+charset-normalizer       3.4.7      MIT                        © 2025 TAHRI Ahmed R.
+idna                     3.18       BSD-3-Clause               © 2013-2026 Kim Davies y contribuidores
+urllib3                  2.7.0      MIT                        © 2008-2020 Andrey Petrov y contribuidores
+cryptography             50.0.1     Apache 2.0 o BSD-3-Clause  © contribuidores individuales
+  (incluye OpenSSL 3, Apache 2.0)
+cffi                     2.1.1      MIT-0                      (no exige atribución)
+pycparser                2.22       BSD-3-Clause               © 2008-2022 Eli Bendersky
+reportlab                4.2.5      BSD                        © 2000-2018 ReportLab Inc.
+qrcode                   8.2        BSD-3-Clause               © 2011 Lincoln Loop
+  (genera los QR de las invitaciones del registro desde el celular)
+Python                   3.12.7     PSF License 2.0            © 2001 Python Software Foundation
+  (incluye SQLite —dominio público—, Tcl/Tk, OpenSSL, libffi, zlib, bzip2, xz
+  y expat, con sus avisos en licencias/Python-3.12.7/LICENSE.txt)
+
+Créditos exigidos por licencias de componentes incluidos
+------------------------------------------------------------------------------
+Portions of this software are copyright © 2025 The FreeType Project
+(www.freetype.org). All rights reserved.
+
+This software is based in part on the work of the Independent JPEG Group.
+
+Licencias con condiciones adicionales
+------------------------------------------------------------------------------
+FFmpeg — LGPL 2.1 o posterior
+  Incluido por opencv-python como una biblioteca dinámica separada
+  (cv2/opencv_videoio_ffmpeg4130_64.dll), que se usa para leer los streams
+  RTSP de las cámaras. No se modificó. Puede reemplazarse por otra versión
+  compatible sustituyendo ese archivo. El código fuente de esa compilación se
+  obtiene en https://github.com/opencv/opencv-python y https://ffmpeg.org.
+  Aviso: licencias/opencv-python-4.13.0.92/ (LICENSE-3RD-PARTY.txt).
+
+certifi 2026.6.17 — MPL 2.0
+  Lista de certificados raíz derivada de la de Mozilla. Se distribuye sin
+  modificar; el código fuente está en https://github.com/certifi/python-certifi.
+
+tqdm 4.67.1 — MPL 2.0 y MIT
+  Sin modificar; código fuente en https://github.com/tqdm/tqdm.
+
+chardet 5.2.0 — LGPL 2.1 o posterior
+  Dependencia de reportlab 4.2.5. Se distribuye sin modificar como módulo de
+  Python reemplazable. Código fuente en https://github.com/chardet/chardet.
+  RECOMENDACIÓN: actualizar reportlab a 4.4 o posterior, que reemplaza chardet
+  por charset-normalizer (MIT) y elimina este componente LGPL.
+
+Componente propietario redistribuible
+------------------------------------------------------------------------------
+DirectML.dll (Microsoft DirectX Machine Learning) 1.15.x
+  Incluido dentro de onnxruntime-directml; permite usar la GPU.
+  Licencia: MICROSOFT SOFTWARE LICENSE TERMS – MICROSOFT DIRECTML. No es código
+  abierto. Permite copiarlo y distribuirlo dentro de aplicaciones para Windows
+  que usen herramientas de aprendizaje automático. Prohíbe distribuirlo por
+  separado, modificarlo y quitar sus avisos.
+  Recolección de datos: los términos indican que el software puede enviar
+  información de uso a Microsoft. No accede a los datos de Umbral Guardian
+  (rostros, patentes, residentes), que nunca salen del nodo, pero se informa
+  por transparencia.
+  Textos: licencias/directml_1.15.4_LICENSE.txt, _LICENSE-CODE.txt (MIT, para
+  el código de ejemplo) y _ThirdPartyNotices.txt.
+  Alternativa sin componentes propietarios: ejecutar en CPU (onnxruntime, MIT),
+  bastante más lento. El controlador de la GPU es en sí mismo propietario.
+
+
+==============================================================================
+3. COMPONENTES QUE NO SE INSTALAN EN EL NODO
+==============================================================================
+
+- La API central (servidor/: Flask, itsdangerous, mysql-connector-python) y la
+  base central MySQL corren en servidores propios y no se distribuyen.
+- Herramientas de desarrollo (tools/calibrar_detector.py usa ultralytics y
+  yolo26s.pt como referencia) y las bibliotecas usadas solo para exportar
+  modelos (rfdetr, torch) no se incluyen en el instalador.
+- Datos usados solo para medir y calibrar en desarrollo (COCO128, LFW) no se
+  distribuyen.
+
+
+==============================================================================
+4. AL EMPAQUETAR (PyInstaller)
+==============================================================================
+
+- Incluir este archivo, la carpeta licencias/ (regenerada con
+  tools/generar_licencias.py) y la carpeta modelos/ junto al ejecutable.
+- Excluir de reportlab las fuentes "DarkGarden" (reportlab/fonts/DarkGarden*),
+  que son GPL: los reportes solo usan Helvetica, fuente estándar de PDF.
+- El cargador de PyInstaller es GPL con una excepción que permite distribuir
+  programas no libres empaquetados con él.
+- Agregar en licencias/ los avisos del runtime de Visual C++ si se incluye.
+
+
+==============================================================================
+5. DEUDA PENDIENTE
+==============================================================================
+
+5.1 Detector de patentes: modelos/license_plate_detector.onnx
+------------------------------------------------------------------------------
+Qué es:
+  YOLOv8n de una sola clase ("license_plate"), entrenado con Ultralytics. Es el
+  mismo archivo license_plate_detector.pt de versiones anteriores, exportado a
+  ONNX sin modificar sus pesos (se ejecuta con onnxruntime, sin el código de
+  Ultralytics). Paridad medida: 7 de 7 patentes iguales, diferencia media de
+  confianza 0.0012.
+
+Problema:
+  - Los metadatos del propio modelo declaran:
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)"
+    Ultralytics considera los pesos entrenados con su software obra derivada
+    cubierta por AGPL-3.0, salvo licencia Enterprise.
+  - No está documentado quién lo entrenó ni con qué conjunto de datos (y bajo
+    qué licencia están esas imágenes).
+
+Por qué no se reemplazó:
+  - La alternativa evaluada, fast-alpr (https://github.com/ankandrew/fast-alpr),
+    tiene el CÓDIGO bajo MIT, igual que open-image-models, de donde sale su
+    detector. Pero los PESOS de ese detector (YOLOv9) no declaran licencia ni
+    datos de entrenamiento, y se entrenaron con un fork de WongKinYiu/yolov9,
+    que es GPL-3.0. Hay más de 10 issues preguntándolo (p. ej. open-image-models
+    #22, fast-alpr #49); el mantenedor confirma que los pesos del OCR son MIT,
+    pero sobre el detector responde "I'm no legal expert to know whether that
+    applies or not". Revisado el 08-11-2026.
+  - Cambiarlo reemplazaría una restricción declarada (AGPL-3.0) por una
+    incertidumbre, y obligaría a repetir las pruebas PI-06 de patentes.
+
+Opciones para cerrarla:
+  a) (Plan elegido) Entrenar un detector de patentes propio con RF-DETR
+     (Apache 2.0) usando datasets de patentes chilenas de Roboflow Universe con
+     licencia que permita uso comercial (CC BY 4.0, dominio público o MIT; nunca
+     "NC" ni sin licencia), exportado a ONNX. Estimado: 2 a 4 días. Basta
+     reemplazar el archivo en modelos/ (y adaptar core/detector.py a un modelo
+     de 1 clase). Los créditos de cada dataset CC BY van en este archivo.
+  b) Pedir al mantenedor de fast-alpr un permiso escrito de uso comercial de
+     los pesos de su detector.
+  c) Comprar licencia Enterprise de Ultralytics para este modelo.
+
+5.2 Modelo de OCR descargado en tiempo de ejecución
+------------------------------------------------------------------------------
+fast-plate-ocr descarga cct-s-v2-global-model desde internet la primera vez
+(a %USERPROFILE%\.cache\fast-plate-ocr). Para cumplir que todos los pesos
+viajen en modelos/, al empaquetar hay que copiar ese modelo a modelos/ y
+cargarlo desde ahí. La licencia (MIT) no cambia.

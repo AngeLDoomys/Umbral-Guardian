@@ -1,0 +1,12 @@
+# API central de Umbral Guardian (servidor en la nube, Ubuntu 24.04)
+# Lo que usan servidor/ y los módulos de core/ que se copian (licencia, security,
+# cifrado, textos, face_utils, plate_utils).
+Flask==3.1.2
+itsdangerous==2.2.0
+mysql-connector-python==9.1.0
+cryptography==50.0.1
+gunicorn==23.0.0
+# registro desde el celular: revisión de fotos y vector del rostro (YuNet + SFace)
+opencv-python-headless==4.13.0.92
+numpy==2.5.0
+Pillow==12.2.0

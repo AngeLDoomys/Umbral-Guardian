@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1710" height="760" viewBox="0 0 1710 760"><defs><marker id="m_llena_3d4047" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L12,6 L0,12 z" fill="#3d4047"/></marker></defs><rect width="1710" height="760" fill="#ffffff"/><rect x="35" y="185" width="885" height="470" rx="12" fill="#f4f6f9" stroke="#2f5b94" stroke-width="2" stroke-dasharray="9 6"/>
+<rect x="1018" y="185" width="657" height="470" rx="12" fill="#f3f7f6" stroke="#1d6b55" stroke-width="2" stroke-dasharray="9 6"/>
+<rect x="1068" y="430" width="557" height="145" rx="8" fill="#e8f2ef" stroke="#1d6b55" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M206,342 L206,408" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<path d="M335,451 L399,451 L399,379 L434,379" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<path d="M570,415 L570,531" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<path d="M1346,342 L1346,466" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<path d="M698,364 L840,364 L840,299 L1061,299" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<path d="M1400,152 L1400,263" fill="none" stroke="#3d4047" stroke-width="2" stroke-linejoin="round" marker-end="url(#m_llena_3d4047)"/>
+<rect x="78" y="270" width="257" height="72" rx="7" fill="#ffffff" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="78" y="415" width="257" height="72" rx="7" fill="#ffffff" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="441" y="343" width="257" height="72" rx="7" fill="#ffffff" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="441" y="538" width="257" height="72" rx="7" fill="#edf1f6" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="1068" y="270" width="557" height="72" rx="7" fill="#ffffff" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="1104" y="473" width="485" height="72" rx="7" fill="#ffffff" stroke="#3d4047" stroke-width="1.6"/>
+<rect x="1180" y="86" width="445" height="66" rx="7" fill="#fff8ec" stroke="#9a6a12" stroke-width="1.6"/>
+<rect x="35" y="672" width="1640" height="70" rx="8" fill="#f9f1df" stroke="#b0841f" stroke-width="1.6"/>
+<text x="855.0" y="36" font-size="26" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="855.0" dy="0">Topología de comunicación</tspan></text>
+<text x="855.0" y="64" font-size="13.5" font-weight="normal" fill="#5b6270" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="855.0" dy="0">Por dónde viaja cada cosa y en qué sentido. Sin especificaciones de equipo: eso va en infraestructura.</tspan></text>
+<text x="55" y="215" font-size="17" font-weight="bold" fill="#2f5b94" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="55" dy="0">Red del condominio</tspan></text>
+<text x="55" y="234" font-size="11" font-weight="normal" fill="#5b6270" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="55" dy="0">sin IP pública fija</tspan></text>
+<text x="206.5" y="297" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="206.5" dy="0">Dos cámaras IP</tspan></text>
+<text x="206.5" y="317.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="206.5" dy="0">canales del grabador</tspan></text>
+<text x="206.5" y="442" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="206.5" dy="0">Grabador</tspan></text>
+<text x="206.5" y="462.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="206.5" dy="0">192.168.1.10</tspan></text>
+<text x="569.5" y="370" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="569.5" dy="0">Nodo de borde</tspan></text>
+<text x="569.5" y="390.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="569.5" dy="0">192.168.1.50</tspan></text>
+<text x="569.5" y="565" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="569.5" dy="0">Base local · SQLite</tspan></text>
+<text x="569.5" y="585.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="569.5" dy="0">archivo umbral_local.db</tspan></text>
+<text x="285" y="368" font-size="12.5" font-weight="bold" fill="#1f2633" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="285" dy="0">RTSP 554</tspan></text>
+<text x="285" y="386" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="285" dy="0">video continuo</tspan></text>
+<text x="388" y="318" font-size="12.5" font-weight="bold" fill="#1f2633" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="388" dy="0">RTSP 554</tspan></text>
+<text x="388" y="336" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="388" dy="0">sólo lectura</tspan></text>
+<text x="670" y="462" font-size="12.5" font-weight="bold" fill="#1f2633" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="670" dy="0">ARCHIVO LOCAL</tspan></text>
+<text x="670" y="480" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="670" dy="0">no abre ningún puerto</tspan></text>
+<text x="1038" y="215" font-size="17" font-weight="bold" fill="#1d6b55" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1038" dy="0">Nube del proveedor</tspan></text>
+<text x="1038" y="234" font-size="11" font-weight="normal" fill="#5b6270" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="1038" dy="0">red privada</tspan></text>
+<text x="1346.5" y="297" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1346.5" dy="0">API del plano de control</tspan></text>
+<text x="1346.5" y="317.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="1346.5" dy="0">escucha en TCP 443</tspan></text>
+<text x="1088" y="456" font-size="13" font-weight="bold" fill="#1d6b55" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1088" dy="0">Red privada · sin salida a internet</tspan></text>
+<text x="1346.5" y="500" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1346.5" dy="0">Base central</tspan></text>
+<text x="1346.5" y="520.5" font-size="11.5" font-weight="normal" fill="#2f5b94" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="1346.5" dy="0">sin IP pública</tspan></text>
+<text x="1446" y="398" font-size="12.5" font-weight="bold" fill="#1f2633" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="1446" dy="0">TCP 3306</tspan></text>
+<text x="1446" y="416" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1446" dy="0">sólo dentro de la nube</tspan></text>
+<text x="800" y="248" font-size="12.5" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="800" dy="0">HTTPS 443</tspan></text>
+<text x="800" y="266" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="800" dy="0">SALE cada 6 h · cuentas y licencia</tspan><tspan x="800" dy="16.099999999999998">cada 60 s · solicitudes del QR</tspan></text>
+<text x="1402.5" y="112" font-size="16" font-weight="bold" fill="#16203a" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1402.5" dy="0">Celular del residente o visita</tspan></text>
+<text x="1402.5" y="132.5" font-size="11.5" font-weight="normal" fill="#5b6270" text-anchor="middle" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1402.5" dy="0">datos móviles o Wi-Fi · fuera del condominio</tspan></text>
+<text x="1412" y="232" font-size="12.5" font-weight="bold" fill="#16203a" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace"><tspan x="1412" dy="0">HTTPS 443</tspan></text>
+<text x="1412" y="250" font-size="11.5" font-weight="normal" fill="#3b4250" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="1412" dy="0">formulario del QR</tspan></text>
+<text x="57" y="701" font-size="15" font-weight="bold" fill="#6b4a08" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="57" dy="0">El video nunca sale del condominio.</tspan></text>
+<text x="57" y="725" font-size="12" font-weight="normal" fill="#6b4a08" text-anchor="start" font-family="DejaVu Sans, Verdana, sans-serif"><tspan x="57" dy="0">Se procesa en la caseta y sólo sube el registro del ingreso. La conexión del nodo siempre la abre el nodo: desde internet no hay forma de entrar. El celular sólo habla con la nube, nunca con el nodo.</tspan></text></svg>

@@ -1,0 +1,25 @@
+sequenceDiagram
+  autonumber
+  participant Cam as Cámara (RTSP)
+  participant LS as Lector de video
+  participant M as Motor (hilo principal)
+  participant G as GPU (RF-DETR)
+  participant F as Hilo de rostros (YuNet + SFace)
+  participant BD as Base local (SQLite)
+  participant UI as Monitor
+  Cam->>LS: video del canal bajo (352x288)
+  loop cada 5 cuadros
+    LS->>M: cuadro más reciente
+    M->>G: detectar personas y vehículos
+    G-->>M: recuadros
+    M->>M: asociar recuadros con personas seguidas
+    alt persona sin decisión o en verificación
+      M->>F: región de la persona (canal alto 1280x720)
+      F->>F: detectar y alinear el rostro
+      F->>F: vector de 128 valores y comparación
+      F->>F: votación (2 coincidencias y mayoría 2 a 1)
+      F->>BD: guardar evento (residente, visita o no reconocido)
+      F-->>UI: aviso en Eventos recientes
+    end
+  end
+  M-->>UI: video con recuadros y etiquetas

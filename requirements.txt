@@ -1,0 +1,28 @@
+# Umbral Guardian · nodo de borde (Windows 10/11, Python 3.12)
+#   py -m pip install -r requirements.txt
+# La API de la nube usa despliegue/requirements_servidor.txt.
+
+# Visión: RF-DETR Nano, YuNet, SFace y el detector de patentes corren en ONNX Runtime con DirectML (GPU)
+onnxruntime-directml==1.24.4
+opencv-python==4.13.0.92
+numpy==2.5.0
+pillow==12.2.0
+
+# Lectura de patentes. Arrastra opencv-python-headless, que pisa a opencv-python:
+# instálelo aparte, después de este archivo, con
+#   py -m pip install fast-plate-ocr==1.1.0 --no-deps
+# Sus dependencias (sin OpenCV) sí se instalan desde aquí:
+pyyaml==6.0.3
+rich==14.2.0
+tqdm==4.67.1
+
+# Nube: licencia firmada (Ed25519), cifrado del registro móvil (X25519 + AES-256-GCM) y API
+cryptography==50.0.1
+requests==2.34.2
+
+# Invitaciones QR y reportes PDF
+qrcode==8.2
+reportlab==4.2.5
+
+# Pruebas automáticas
+pytest==9.1.1

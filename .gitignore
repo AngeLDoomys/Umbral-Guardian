@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------
+#  SECRETOS: nunca se suben
+# ---------------------------------------------------------------
+nodo.json
+servidor/secreto.key
+servidor/licencia_privada.pem
+despliegue/paquete/
+despliegue/api.env
+*.env
+labsuser.pem
+
+# ---------------------------------------------------------------
+#  DATOS PERSONALES: fotos con rostros, patentes y RUT reales
+#  (las copias difuminadas para el informe están en docs/anexos/capturas)
+# ---------------------------------------------------------------
+tests/evidencias/
+
+# ---------------------------------------------------------------
+#  Configuración de cada instalación (las cámaras llevan usuario y clave del grabador)
+# ---------------------------------------------------------------
+cameras.json
+settings.json
+
+# ---------------------------------------------------------------
+#  Modelos: rfdetr_nano.onnx pesa más de 100 MB (límite de GitHub); ver README
+# ---------------------------------------------------------------
+modelos/*.onnx
+*.pt
+
+# ---------------------------------------------------------------
+#  Generados al ejecutar
+# ---------------------------------------------------------------
+reports_output/
+debug_plates/
+build/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+~$*
