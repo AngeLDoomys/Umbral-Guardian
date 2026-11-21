@@ -56,7 +56,7 @@ licencias/, AVISOS.txt   licencias de terceros (deben acompañar al programa)
    py -m pip install -r requirements.txt
    py -m pip install fast-plate-ocr==1.1.0 --no-deps
    ```
-3. Copie los cuatro modelos en `modelos/` (ver la sección siguiente).
+3. Copie `cameras.ejemplo.json` como `cameras.json` y ponga el usuario y la clave de su grabador (o agregue las cámaras desde el programa).
 4. Vincule el nodo con la nube usando la clave que entrega el proveedor:
    ```
    py setup_nodo.py --clave ugn_xxxxx --api https://su-servidor
@@ -70,7 +70,7 @@ La API de la nube se instala aparte, siguiendo [despliegue/GUIA_AWS.md](desplieg
 
 ## Modelos
 
-Los modelos no están en el repositorio: `rfdetr_nano.onnx` supera el límite de 100 MB de GitHub. Deben quedar en `modelos/` con estos nombres:
+Los cuatro modelos vienen en `modelos/` y se guardan con **Git LFS**, porque `rfdetr_nano.onnx` supera el límite de 100 MB de GitHub. Para clonar el repositorio con los modelos completos, instale Git LFS antes (`git lfs install`). Si no lo hace, en `modelos/` quedan solo archivos de referencia en lugar de los modelos.
 
 | Archivo | Origen | Licencia |
 |---|---|---|
@@ -92,11 +92,10 @@ Las pruebas que necesitan MySQL o las fotos reales de las evidencias se omiten s
 Por seguridad y privacidad, `.gitignore` excluye:
 
 - **Secretos:** `nodo.json`, `servidor/secreto.key` y `servidor/licencia_privada.pem`.
-- **Configuración local:** `cameras.json` (lleva el usuario y la clave del grabador) y `settings.json`.
-- **Evidencias de las pruebas:** `tests/evidencias/`.
-- **Modelos:** los archivos `.onnx` de `modelos/`.
+- **Cámaras reales:** `cameras.json`, que lleva el usuario y la clave del grabador. En su lugar va `cameras.ejemplo.json`.
+- **Evidencias de las pruebas:** `tests/evidencias/`, con rostros, patentes y RUT reales. Las copias difuminadas están en `docs/anexos/capturas/`.
 
-`setup_central.py` y `setup_nodo.py` generan los secretos y la configuración en cada instalación.
+`setup_central.py` y `setup_nodo.py` generan los secretos en cada instalación.
 
 ## Licencias
 

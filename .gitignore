@@ -16,15 +16,14 @@ labsuser.pem
 tests/evidencias/
 
 # ---------------------------------------------------------------
-#  Configuración de cada instalación (las cámaras llevan usuario y clave del grabador)
+#  Cámaras reales: llevan usuario y clave del grabador (se sube cameras.ejemplo.json sin clave)
 # ---------------------------------------------------------------
 cameras.json
-settings.json
 
 # ---------------------------------------------------------------
-#  Modelos: rfdetr_nano.onnx pesa más de 100 MB (límite de GitHub); ver README
+#  Modelos: los .onnx de modelos/ SÍ se suben, con Git LFS (ver .gitattributes).
+#  Los .pt son de Ultralytics y solo los usa tools/calibrar_detector.py
 # ---------------------------------------------------------------
-modelos/*.onnx
 *.pt
 
 # ---------------------------------------------------------------

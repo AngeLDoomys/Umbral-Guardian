@@ -1,0 +1,80 @@
+{
+  "cameras": [
+    {
+      "id": "cam_01",
+      "name": "Entrada Principal",
+      "source": 2,
+      "type": "usb",
+      "enabled": true,
+      "location": "Entrada Principal",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "rotate": 0
+    },
+    {
+      "id": "cam_02",
+      "name": "d1",
+      "source": "192.168.1.51",
+      "type": "usb",
+      "enabled": true,
+      "location": "Parque",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "rotate": 0
+    },
+    {
+      "id": "cam_03",
+      "name": "Cámara nueva",
+      "source": "rtsp://USUARIO:CLAVE@192.168.1.179:554/Streaming/Channels/101",
+      "type": "rtsp",
+      "enabled": true,
+      "location": "test",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "rotate": 0
+    },
+    {
+      "id": "cam_04",
+      "name": "Cámara nueva",
+      "source": "rtsp://USUARIO:CLAVE@192.168.1.179:554/Streaming/Channels/501",
+      "type": "rtsp",
+      "enabled": true,
+      "location": "Conserjeria 1",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "rotate": 0
+    },
+    {
+      "id": "cam_05",
+      "name": "Cámara nueva",
+      "source": "rtsp://USUARIO:CLAVE@192.168.1.179:554/Streaming/Channels/201",
+      "type": "rtsp",
+      "enabled": true,
+      "location": "",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "rotate": 0
+    }
+  ],
+  "_types_reference": {
+    "usb": "Cámara USB/integrada. source = índice entero (0, 1, 2...)",
+    "rtsp": "Cámara IP/NVR. source = 'rtsp://USUARIO:CLAVE@ip:554/stream'",
+    "droidcam": "Android DroidCam. source = 'http://ip:4747/video'",
+    "file": "Video local. source = 'ruta/video.mp4'"
+  }
+}
