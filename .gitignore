@@ -10,10 +10,15 @@ despliegue/api.env
 labsuser.pem
 
 # ---------------------------------------------------------------
-#  DATOS PERSONALES: fotos con rostros, patentes y RUT reales
-#  (las copias difuminadas para el informe están en docs/anexos/capturas)
+#  NO SON PARTE DEL FUNCIONAMIENTO: quedan solo en el PC del autor
+#  (informe, anexos, diagramas, pruebas con evidencias reales y herramientas de desarrollo)
 # ---------------------------------------------------------------
-tests/evidencias/
+docs/
+tests/
+tools/
+licencias_externas/
+sql/*
+!sql/central.sql
 
 # ---------------------------------------------------------------
 #  Cámaras reales: llevan usuario y clave del grabador (se sube cameras.ejemplo.json sin clave)

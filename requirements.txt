@@ -23,6 +23,3 @@ requests==2.34.2
 # Invitaciones QR y reportes PDF
 qrcode==8.2
 reportlab==4.2.5
-
-# Pruebas automáticas
-pytest==9.1.1

@@ -38,13 +38,10 @@ engine/              motor de visión (un hilo por cámara)
 gui/                 interfaz Tkinter (vistas según el rol)
 reports/             reportes PDF y CSV
 migraciones/         esquema SQLite versionado
-modelos/             modelos ONNX (no se suben: ver más abajo)
+modelos/             modelos ONNX (Git LFS)
 servidor/            API de la nube y formulario del registro móvil
 sql/central.sql      esquema de la base central (MySQL)
 despliegue/          instalación en AWS (guía, scripts y requirements del servidor)
-tools/               herramientas de calibración, auditoría de red y licencias
-tests/               pruebas automáticas (pytest)
-docs/                anexos del informe y generadores de diagramas
 licencias/, AVISOS.txt   licencias de terceros (deben acompañar al programa)
 ```
 
@@ -79,23 +76,13 @@ Los cuatro modelos vienen en `modelos/` y se guardan con **Git LFS**, porque `rf
 | `face_recognition_sface_2021dec.onnx` | [OpenCV Zoo · SFace](https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface) | Apache 2.0 |
 | `license_plate_detector.onnx` | YOLOv8n de una clase, entregado por el autor | AGPL-3.0 (ver AVISOS.txt, sección 5) |
 
-## Pruebas
-
-```
-py -m pytest -q
-```
-
-Las pruebas que necesitan MySQL o las fotos reales de las evidencias se omiten solas cuando faltan. Esas fotos no se publican porque muestran rostros y patentes reales.
-
 ## Lo que no está en el repositorio
 
-Por seguridad y privacidad, `.gitignore` excluye:
+El repositorio contiene solo lo necesario para que el sistema funcione. `.gitignore` deja fuera:
 
-- **Secretos:** `nodo.json`, `servidor/secreto.key` y `servidor/licencia_privada.pem`.
+- **Secretos:** `nodo.json`, `servidor/secreto.key` y `servidor/licencia_privada.pem`. Los generan `setup_central.py` y `setup_nodo.py` en cada instalación.
 - **Cámaras reales:** `cameras.json`, que lleva el usuario y la clave del grabador. En su lugar va `cameras.ejemplo.json`.
-- **Evidencias de las pruebas:** `tests/evidencias/`, con rostros, patentes y RUT reales. Las copias difuminadas están en `docs/anexos/capturas/`.
-
-`setup_central.py` y `setup_nodo.py` generan los secretos en cada instalación.
+- **Material del proyecto de título:** el informe, los anexos, los diagramas, las pruebas automáticas (con fotos reales de las evidencias) y las herramientas de calibración. Se conservan aparte.
 
 ## Licencias
 
